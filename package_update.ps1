@@ -1,3 +1,5 @@
+& "$PSScriptRoot\lib\confirm_ps7.ps1"
+
 # Get plain-text list of upgradeable packages
 $rawOutput = winget upgrade --accept-source-agreements
 

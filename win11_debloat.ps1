@@ -1,3 +1,5 @@
+& "$PSScriptRoot\lib\confirm_ps7.ps1"
+
 # Debloat: Remove consumer apps
 $appsToRemove = @(
     "Microsoft.3DBuilder",
