@@ -12,7 +12,10 @@ Open `Powershell` as Administrator, then:
 Set-ExecutionPolicy Bypass -Scope Process -Force
 ```
 
-## Confirmed Tested
+## Script Testing
+
+> [!WARNING]  
+> Please note that regardless of the status table, all scripts are executed at your own risk. It is strongly recommended to save and close any critical applications beforehand.
 
 | Script Name           | Tested Date | State          |
 |-----------------------|-------------|----------------|
