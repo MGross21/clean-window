@@ -1,4 +1,10 @@
-# Windows Cleanup Utilies
+<div align="center">
+    <h1><img src="assets/clean-window-logo.png" alt="Clean Window" width="300px"></h1>
+</div>
+
+*Windows Cleanup Utilies*
+
+## Instructions
 
 Uses `Powershell 7+`
 
