@@ -1,5 +1,3 @@
-& "$PSScriptRoot\lib\confirm_ps7.ps1"
-
 # Clear Temp Files
 Remove-Item "$env:TEMP\*" -Recurse -Force -ErrorAction SilentlyContinue
 

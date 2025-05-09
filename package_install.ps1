@@ -1,5 +1,3 @@
-& "$PSScriptRoot\lib\confirm_ps7.ps1"
-
 $apps = @(
     "Notepad++.Notepad++",
     "Microsoft.VisualStudioCode",
