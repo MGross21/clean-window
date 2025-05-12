@@ -2,13 +2,13 @@
     <h1><img src="assets/clean-window-logo.png" alt="Clean Window" width="300px"></h1>
 </div>
 
-*Windows Cleanup Utilies*
+*Windows Cleanup and Maintenance Utilies*
 
 ## Instructions
 
 ### Install PowerShell 7
 
-`Win`+`R`, type `cmd`, then open as admin (`ctrl`+`shift`+`enter`)
+`Win`+`R`, type `"cmd"`, then open as admin (`Ctrl`+`Shift`+`Enter`)
 
 ```bash
 winget install --id=Microsoft.Powershell
@@ -22,7 +22,8 @@ powershell -Command "Start-Process pwsh -Verb RunAs"
 
 ### Change Execution Permissions
 
-*Run if future steps prevent external script execution*
+> [!Note]
+> Only run if future steps prevent external script execution
 
 ```bash
 Set-ExecutionPolicy Bypass -Scope Process -Force
@@ -35,7 +36,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force
 
 #### Package Updater
 
-**State:** ✅ Working  (Windows 11 | Ver. 24H2)
+**Status:** ✅ Working  (Windows 11 | Ver. 24H2)
 
 ```powershell
 iex (Invoke-WebRequest -Uri "https://raw.githubusercontent.com/MGross21/clean-window/main/package_update.ps1").Content
@@ -43,7 +44,7 @@ iex (Invoke-WebRequest -Uri "https://raw.githubusercontent.com/MGross21/clean-wi
 
 #### Win11 Debloat
 
-**State:** ✅ Working (Windows 11 | Ver. 24H2)
+**Status:** ✅ Working (Windows 11 | Ver. 24H2)
 
 ```powershell
 iex (Invoke-WebRequest -Uri "https://raw.githubusercontent.com/MGross21/clean-window/main/win11_debloat.ps1").Content
@@ -51,7 +52,7 @@ iex (Invoke-WebRequest -Uri "https://raw.githubusercontent.com/MGross21/clean-wi
 
 #### Temp Cleanup
 
-**State:** ❌ Not Tested  
+**Status:** ❌ Not Tested  
 
 ```powershell
 iex (Invoke-WebRequest -Uri "https://raw.githubusercontent.com/MGross21/clean-window/main/temp_cleanup.ps1").Content
@@ -59,7 +60,7 @@ iex (Invoke-WebRequest -Uri "https://raw.githubusercontent.com/MGross21/clean-wi
 
 #### Package Installer
 
-**State:** ❌ Not Tested  
+**Status:** ❌ Not Tested  
 
 ```powershell
 iex (Invoke-WebRequest -Uri "https://raw.githubusercontent.com/MGross21/clean-window/main/package_install.ps1").Content

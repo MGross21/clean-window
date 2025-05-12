@@ -14,9 +14,13 @@ $parsedList = $rawOutput |
         }
     }
 
+# Get total count
+$total = $parsedList.Count
+$index = 1
+
 # Upgrade each package
 foreach ($pkg in $parsedList) {
-    Write-Host "`nUpgrading: $($pkg.Name)" -ForegroundColor Cyan
+    Write-Host "`nUpgrading ($index/$total): $($pkg.Name)" -ForegroundColor Cyan
     $wingetArgs = @(
         "upgrade",
         "$($pkg.Id)",
@@ -33,4 +37,5 @@ foreach ($pkg in $parsedList) {
     } catch {
         Write-Host "Failed: $($pkg.Name)" -ForegroundColor Red
     }
+    $index++
 }
