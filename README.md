@@ -14,7 +14,7 @@
 winget install --id=Microsoft.Powershell
 ```
 
-### Open `Powershell` as Administrator
+### Open `Powershell` as Administrator from `Command Prompt`
 
 ```bash
 powershell -Command "Start-Process pwsh -Verb RunAs"
