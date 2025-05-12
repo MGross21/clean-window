@@ -22,6 +22,8 @@ powershell -Command "Start-Process pwsh -Verb RunAs"
 
 ### Change Execution Permissions
 
+*Run if future steps prevent external script execution*
+
 ```bash
 Set-ExecutionPolicy Bypass -Scope Process -Force
 ```
