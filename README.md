@@ -38,6 +38,9 @@ Set-ExecutionPolicy Bypass -Scope Process -Force
 
 **Status:** ✅ Working  (Windows 11 | Ver. 24H2)
 
+> [!Note]
+> Some applications may create desktop shortcuts during updates. This behavior is controlled by the applications themselves and not by the `winget` package installer. You can safely delete these shortcuts at any time during or after script execution.
+
 ```powershell
 iex (Invoke-WebRequest -Uri "https://raw.githubusercontent.com/MGross21/clean-window/main/package_update.ps1").Content
 ```
