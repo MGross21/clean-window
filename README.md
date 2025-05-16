@@ -47,10 +47,18 @@ iex (Invoke-WebRequest -Uri "https://raw.githubusercontent.com/MGross21/clean-wi
 
 #### Win11 Debloat
 
+##### Minimal
+
 **Status:** ✅ Working (Windows 11 | Ver. 24H2)
 
 ```powershell
 iex (Invoke-WebRequest -Uri "https://raw.githubusercontent.com/MGross21/clean-window/main/win11_debloat.ps1").Content
+```
+
+##### Chris Titus' [WinUtil](https://github.com/ChrisTitusTech/winutil)
+
+```powershell
+iex "& { $(irm https://christitus.com/win) } -Config [path-to-your-config] -Run"
 ```
 
 #### Temp Cleanup
