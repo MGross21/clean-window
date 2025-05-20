@@ -1,12 +1,13 @@
-# Read package list from external configuration file
-$packageFile = "./packages.conf"
-if (Test-Path $packageFile) {
-    $apps = Get-Content $packageFile
-} else {
-    Write-Error "Package configuration file not found: $packageFile"
-    exit 1
-}
+# Read and install from a YAML winget config file
+$remoteUrl = "https://raw.githubusercontent.com/MGross21/clean-window/main/packages.yaml"
+$tempFile = [IO.Path]::GetTempFileName()
 
-foreach ($app in $apps) {
-    winget install $app --accept-package-agreements --accept-source-agreements -h
+try {
+    Invoke-WebRequest $remoteUrl -OutFile $tempFile -UseBasicParsing
+    winget install --config $tempFile --accept-package-agreements --accept-source-agreements -h
+} catch {
+    Write-Error "Install failed: $_"
+    exit 1
+} finally {
+    Remove-Item $tempFile -ErrorAction SilentlyContinue
 }
