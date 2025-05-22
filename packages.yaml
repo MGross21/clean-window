@@ -1,13 +1,11 @@
 $schema: https://aka.ms/winget-packages.schema.2.0.json
 packages:
-  # APPS
-  - packageIdentifier: Microsoft.VisualStudioCode
+  - packageIdentifier: Microsoft.VisualStudioCode 
   - packageIdentifier: Spotify.Spotify
-
-  # UTILITIES
-  - packageIdentifier: 7zip.7zip
-  - packageIdentifier: lars-berger.GlazeWM
-  - packageIdentifier: Microsoft.PowerToys
+  - packageIdentifier: 7zip.7zip                  # File Compression/Extraction
+  - packageIdentifier: lars-berger.GlazeWM        # Tiling Window Manager
+  - packageIdentifier: Microsoft.PowerToys        # Extra Windows Utilities
   - packageIdentifier: Microsoft.WindowsTerminal
-  - packageIdentifier: WinDirStat.WinDirStat
-  - packageIdentifier: AutoHotkey.AutoHotkey
+  - packageIdentifier: WinDirStat.WinDirStat      # Drive Space Analyzer
+  - packageIdentifier: AutoHotkey.AutoHotkey      # AutoHotkey
+  - packageIdentifier: splode.pomotroid           # Pomodoro Timer
