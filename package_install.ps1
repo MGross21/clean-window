@@ -3,6 +3,7 @@ $remoteUrl = "https://raw.githubusercontent.com/MGross21/clean-window/main/packa
 $tempFile = [IO.Path]::GetTempFileName()
 
 try {
+    winget settings --enable LocalManifestFiles # Ensure LocalManifestFiles feature is enabled
     Invoke-WebRequest $remoteUrl -OutFile $tempFile -UseBasicParsing
     winget install --manifest $tempFile --accept-package-agreements --accept-source-agreements -h
 } catch {
