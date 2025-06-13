@@ -4,7 +4,7 @@ $tempFile = [IO.Path]::GetTempFileName()
 
 try {
     Invoke-WebRequest $remoteUrl -OutFile $tempFile -UseBasicParsing
-    winget install --config $tempFile --accept-package-agreements --accept-source-agreements -h
+    winget install --manifest $tempFile --accept-package-agreements --accept-source-agreements -h
 } catch {
     Write-Error "Install failed: $_"
     exit 1
