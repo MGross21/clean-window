@@ -1,3 +1,15 @@
+# Check if running as administrator
+if (-not ([bool](New-Object Security.Principal.WindowsPrincipal([Security.Principal.WindowsIdentity]::GetCurrent())).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator))) {
+    Write-Error "This script must be run as an administrator."
+    exit 1
+}
+
+# Check if running in PowerShell 7 or higher
+if ($PSVersionTable.PSVersion.Major -lt 7) {
+    Write-Error "This script requires PowerShell 7 or higher."
+    exit 1
+}
+
 # Read and install from a YAML winget config file
 $remoteUrl = "https://raw.githubusercontent.com/MGross21/clean-window/main/packages.yaml"
 $tempFile = [IO.Path]::GetTempFileName()
