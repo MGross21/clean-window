@@ -17,7 +17,7 @@ $tempFile = [IO.Path]::GetTempFileName()
 try {
     winget settings --enable LocalManifestFiles # Ensure LocalManifestFiles feature is enabled
     Invoke-WebRequest $remoteUrl -OutFile $tempFile -UseBasicParsing
-    winget install --manifest $tempFile --accept-package-agreements --accept-source-agreements -h
+    winget install --manifest $tempFile --accept-package-agreements --accept-source-agreements --silent
 } catch {
     Write-Error "Install failed: $_"
     exit 1
