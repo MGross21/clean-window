@@ -58,7 +58,7 @@ iex (Invoke-WebRequest -Uri "https://raw.githubusercontent.com/MGross21/clean-wi
 ##### Chris Titus' [WinUtil](https://github.com/ChrisTitusTech/winutil)
 
 ```powershell
-iex "& { $(irm https://christitus.com/win) } -Config [path-to-your-config] -Run"
+iex "& { $(irm https://christitus.com/win) } -Config https://raw.githubusercontent.com/MGross21/clean-window/main/config/winutil_config.json -Run"
 ```
 
 #### Temp Cleanup

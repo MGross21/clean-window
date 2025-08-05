@@ -1,0 +1,17 @@
+{
+  "WPFInstall": [],
+  "WPFTweaks": [
+    "WPFTweaksRecallOff",
+    "WPFTweaksWifi",
+    "WPFTweaksEdgeDebloat",
+    "WPFTweaksLoc",
+    "WPFTweaksDeleteTempFiles",
+    "WPFTweaksHiber",
+    "WPFTweaksPowershell7Tele",
+    "WPFTweaksAH",
+    "WPFTweaksTele",
+    "WPFTweaksDVR"
+  ],
+  "WPFFeature": [],
+  "Install": []
+}
