@@ -11,7 +11,7 @@ if ($PSVersionTable.PSVersion.Major -lt 7) {
 }
 
 # Read and install from a YAML winget config file
-$remoteUrl = "https://raw.githubusercontent.com/MGross21/clean-window/main/packages.yaml"
+$remoteUrl = "https://raw.githubusercontent.com/MGross21/clean-window/main/config/packages.yaml"
 $tempFile = [IO.Path]::GetTempFileName()
 
 try {

@@ -42,7 +42,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force
 > Some applications may create desktop shortcuts during updates. This behavior is controlled by the applications themselves and not by the `winget` package installer. You can safely delete these shortcuts at any time during or after script execution.
 
 ```powershell
-iex (Invoke-WebRequest -Uri "https://raw.githubusercontent.com/MGross21/clean-window/main/package_update.ps1").Content
+iex (Invoke-WebRequest -Uri "https://raw.githubusercontent.com/MGross21/clean-window/main/scripts/package_update.ps1").Content
 ```
 
 #### Win11 Debloat
@@ -52,7 +52,7 @@ iex (Invoke-WebRequest -Uri "https://raw.githubusercontent.com/MGross21/clean-wi
 **Status:** ✅ Working (Windows 11 | Ver. 24H2)
 
 ```powershell
-iex (Invoke-WebRequest -Uri "https://raw.githubusercontent.com/MGross21/clean-window/main/win11_debloat.ps1").Content
+iex (Invoke-WebRequest -Uri "https://raw.githubusercontent.com/MGross21/clean-window/main/scripts/win11_debloat.ps1").Content
 ```
 
 ##### Chris Titus' [WinUtil](https://github.com/ChrisTitusTech/winutil)
@@ -66,7 +66,7 @@ iex "& { $(irm https://christitus.com/win) } -Config https://raw.githubuserconte
 **Status:** ❌ Not Tested  
 
 ```powershell
-iex (Invoke-WebRequest -Uri "https://raw.githubusercontent.com/MGross21/clean-window/main/temp_cleanup.ps1").Content
+iex (Invoke-WebRequest -Uri "https://raw.githubusercontent.com/MGross21/clean-window/main/scripts/temp_cleanup.ps1").Content
 ```
 
 #### Package Installer
@@ -74,5 +74,5 @@ iex (Invoke-WebRequest -Uri "https://raw.githubusercontent.com/MGross21/clean-wi
 **Status:** ❌ Not Tested  
 
 ```powershell
-iex (Invoke-WebRequest -Uri "https://raw.githubusercontent.com/MGross21/clean-window/main/package_install.ps1").Content
+iex (Invoke-WebRequest -Uri "https://raw.githubusercontent.com/MGross21/clean-window/main/scripts/package_install.ps1").Content
 ```
